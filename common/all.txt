@@ -1,0 +1,24 @@
+cmdOnLogin c @autoloot 100
+
+useSelf_item 501,503,507,508,512,513,515,516,517,519,528,529,530,535,536,549,550,553,569,571,580 {
+	label hpItems
+	notInTown 1
+	hp < 90%
+	timeout 0.1
+}
+
+useSelf_item 514,568 {
+	sp < 50%
+}
+
+useSelf_item Green Herb {
+	inInventory Green Herb > 5
+	timeout 1
+}
+
+useSelf_item Green Herb {
+	inInventory Green Herb
+	whenStatusActive Poisoned
+	timeout 1
+}
+

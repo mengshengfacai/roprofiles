@@ -1,0 +1,31 @@
+###extrasell.txt
+
+Egg Shell 0 0 1
+Fancy Flower 0 0 1
+Iron Wrist 0 0 1
+Goblin Mask 0 0 1
+#Undershirt 0 0 1
+Poker Face 0 0 1
+Surprised Mask 0 0 1
+Annoyed Mask 0 0 1
+Monk Hat 0 0 1
+Unicorn Horn 0 0 1
+Bark Shorts 0 0 1
+Red Herb 0 0 1
+Garlet 0 0 1
+Scell 0 0 1
+1002 0 0 1 # Iron Ore
+5118 0 0 1 # Puppy Headband
+7762 0 0 1 # Yaga's Pestle
+1622 0 0 1 # Hypnotist's Staff [2]
+2224 0 0 1 # Goggles [0]
+2225 0 0 1 # Goggles [1]
+"Silk Robe [1]" 0 0 1
+"Padded Armor [1]" 0 0 1
+"Rod [4]" 0 0 1
+"Branch [3]" 0 0 1
+"Falchion [4]" 0 0 1
+"Wand [3]" 0 0 1
+"Shield [1]" 0 0 1
+"Buckler [1]" 0 0 1
+

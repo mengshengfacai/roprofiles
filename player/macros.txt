@@ -1,0 +1,14 @@
+automacro warppay_dun01 {
+	console /Calculating lockMap route to: Payon Cave\(pay_dun01\)/
+	exclusive 1
+	log warppay_dun01 
+	call mpay_dun01 
+}
+
+macro mpay_dun01 {
+		do c @go 0
+		do move 160 192
+		do talknpc 159 192 c r0
+}
+
+

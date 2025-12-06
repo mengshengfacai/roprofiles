@@ -1,0 +1,11 @@
+saveMap prontera
+saveMap_warpToBuyOrSell 1
+saveMap_warpChatCommand @go 0
+
+sellAuto 1
+sellAuto_npc prontera 161 180
+
+storageAuto 1
+#storageAuto_npc prontera 159 180
+storageAuto_type 0
+storageAuto_useChatCommand @gs

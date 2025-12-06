@@ -1,0 +1,7 @@
+buyAuto Silver Arrow {
+	npc prontera 151 284
+	minAmount 100
+	maxAmount 5000
+	minBase 10
+	zeny > 4500
+}
