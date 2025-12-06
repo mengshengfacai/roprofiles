@@ -1,0 +1,21 @@
+useSelf_skill BS_ADRENALINE {
+	whenStatusInactive EFST_ADRENALINE
+	notWhileSitting 1
+	notInTown 1
+	timeout 5
+}
+
+useSelf_item 12114 {
+	location mosk_dun01
+	notinTown 1
+	whenStatusInactive EFST_PROPERTYFIRE 
+	timeout 1800
+	disabled 1
+}
+
+attackSkillSlot MC_MAMMONITE {
+	sp > 20%
+	disabled 1
+}
+
+

@@ -1,0 +1,54 @@
+automacro warplockMap {
+	hook AI/lockMap
+	exclusive 1
+	call wlockMap 
+}
+
+macro wlockMap {
+	do c @go 0
+	do move 160 192
+	do talknpc 159 192 c r0
+}
+
+automacro hptele {
+	hp < 80%
+	exclusive 1
+	timeout 5
+	call {
+		do is Fly Wing
+	}
+}
+
+automacro hptele {
+	hp < 40%
+	exclusive 1
+	timeout 5
+	call townheal
+}
+
+automacro townheal {
+	hp < 50%
+	location prontera
+	exclusive 1
+	call townheal 
+}
+
+macro townheal {
+	do c @go 0
+	do move 160 192
+	do talknpc 162 193 c
+}
+
+automacro sptotown {
+	sp < 10%
+	exclusive 1
+	call townheal 
+}
+
+automacro skipgeo {
+	console /uses Heal on Monster Geographer/
+	exclusive 1
+	call {
+		do tele
+	}
+}

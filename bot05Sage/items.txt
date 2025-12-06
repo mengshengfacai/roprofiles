@@ -1,0 +1,8 @@
+buyAuto Fly Wing {
+	label buyAutoFlyWing
+	npc prontera 161 180
+	minAmount 2
+	maxAmount 50
+	minBase 10
+	zeny > 50000
+}

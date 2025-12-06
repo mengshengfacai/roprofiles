@@ -1,0 +1,24 @@
+useSelf_skill AC_CONCENTRATION {
+	whenStatusInactive EFST_CONCENTRATION
+	notWhileSitting 1
+	notInTown 1
+	timeout 5
+}
+
+useSelf_skill SN_SIGHT {
+	whenStatusInactive EFST_TRUESIGHT
+	notWhileSitting 1
+	notInTown 1
+	timeout 5
+}
+
+useSelf_skill SN_WINDWALK {
+	whenStatusInactive EFST_WINDWALK
+	notWhileSitting 1
+	notInTown 1
+	timeout 5
+}
+
+attackSkillSlot AC_DOUBLE {
+	sp > 10%
+}

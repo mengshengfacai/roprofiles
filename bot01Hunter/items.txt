@@ -1,0 +1,91 @@
+getAuto Wind Arrow {
+	#Crystal Arrow
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+}
+
+getAuto Fire Arrow {
+	#Crystal Arrow
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+}
+
+getAuto Concentration Potion {
+	minAmount 1
+	maxAmount 5
+}
+
+getAuto Candy {
+	minAmount 2
+	maxAmount 25
+	minBase 10
+}
+
+buyAuto Wind Arrow {
+	#Crystal Arrow
+	npc prontera 151 180
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	zeny > 4500
+}
+
+buyAuto Fire Arrow {
+	#Crystal Arrow
+	npc prontera 151 180
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	zeny > 4500
+}
+
+buyAuto Fly Wing {
+	label buyAutoFlyWing
+	npc prontera 161 180
+	minAmount 10
+	maxAmount 50
+	minBase 10
+	zeny > 50000
+}
+
+buyAuto Yellow Potion {
+	npc prontera 161 180
+	minAmount 2
+	maxAmount 25
+	minBase 10
+	zeny > 50000
+	disabled 1
+}
+
+buyAuto Concentration Potion {
+	npc prontera 161 180
+	minAmount 1
+	maxAmount 5
+	zeny > 50000
+}
+
+useSelf_item Concentration Potion {
+	whenStatusInactive EFST_ATTHASTE_POTION1
+	inLockOnly 0
+	notInTown 1
+	notWhileSitting 1
+	timeout 5
+}
+
+autoSwitch High Orc {
+    arrow Crystal Arrow
+}
+
+autoSwitch Orc Warrior, Orc Archer, Orc Lady, 1155, 1884 {
+    arrow Fire Arrow
+}
+
+autoSwitch 1156, 1692 {
+    arrow Stone Arrow
+}
+
+autoSwitch 1883, 1882 {
+    arrow Wind Arrow
+}

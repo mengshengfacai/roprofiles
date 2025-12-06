@@ -1,0 +1,47 @@
+automacro warplockMap {
+	hook AI/lockMap
+	exclusive 1
+	call wlockMap 
+}
+
+macro wlockMap {
+	do c @go 0
+	do move 160 192
+	do talknpc 159 192 c r0
+}
+
+automacro sumparty {
+	notInTown 1
+	call {
+		do c @pr 212
+	}
+	timeout 180
+	disabled 1
+}
+
+automacro autotownheal {
+	hp < 50%
+	location prontera
+	exclusive 1
+	call townheal 
+}
+
+macro townheal {
+	do c @go 0
+	do move 160 192
+	do talknpc 162 193 c
+}
+
+automacro fly15 {
+    sp < 15%
+	notInTown 1
+	timeout 10
+	call townheal
+}
+
+automacro fly50 {
+    hp < 20%
+	notInTown 1
+    timeout 10
+    call townheal
+}

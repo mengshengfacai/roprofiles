@@ -1,0 +1,46 @@
+getAuto Awakening Potion {
+	minAmount 1
+	maxAmount 5
+	disabled 1
+}
+
+getAuto 12115 {
+	minAmount 1
+	maxAmount 2
+	disabled 1
+}
+
+buyAuto Fly Wing {
+	npc prontera 161 180
+	minAmount 10
+	maxAmount 50
+	minBase 10
+	zeny > 50000
+	disabled 1
+}
+
+buyAuto Awakening Potion {
+	npc prontera 161 180
+	minAmount 1
+	maxAmount 5
+	zeny > 50000
+	disabled 1
+}
+
+useSelf_item Awakening Potion {
+	whenStatusInactive EFST_ATTHASTE_POTION2
+	inLockOnly 0
+	notInTown 1
+	notWhileSitting 1
+	disabled 1
+}
+
+useSelf_item 12115 {
+	whenStatusInactive EFST_PROPERTYWATER
+	inLockOnly 0
+	notInTown 1
+	location in_sphinx4
+	notWhileSitting 1
+	timeout 1800
+	disabled 1
+}

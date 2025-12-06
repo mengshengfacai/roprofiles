@@ -1,0 +1,75 @@
+useSelf_skill TK_DODGE {
+	whenStatusInactive EFST_DODGE_ON
+	timeout 5
+	sp > 40
+	inLockOnly 0
+	disabled 0
+}
+
+useSelf_skill TK_SEVENWIND {
+	lvl 7
+	whenStatusInactive EFST_ASPERSIO
+	#whenStatusInactive EFST_PROPERTYFIRE
+	timeout 5
+	sp > 40
+	inLockOnly 0
+	disabled 0
+}
+
+useSelf_skill SL_KAIZEL {
+	whenStatusInactive EFST_KAIZEL
+	timeout 5
+	sp > 40
+	inLockOnly 0
+	disabled 0
+}
+
+partySkill SL_PRIEST {
+	target BotHealer
+	timeout 300
+	sp > 40
+	inLockOnly 0
+	disabled 0
+}
+
+partySkill SL_ASSASIN {
+	target BotAssassin
+	timeout 300
+	sp > 40
+	inLockOnly 0
+	disabled 0
+}
+
+#Small
+attackSkillSlot SL_STIN {
+    dist 9,8,7,6,5
+    sp > 20
+	notWhileSitting 1
+	notInTown 1
+	disabled 1
+}
+
+#Medium 
+attackSkillSlot SL_STUN {
+    dist 9,8,7,6,5
+    sp > 20
+	notWhileSitting 1
+	notInTown 1
+	disabled 0
+}
+
+attackSkillSlot SL_SWOO {
+    sp > 10
+    maxUses 1
+    #monsters  Centipede Larva, Centipede, Bradium Golem, Tatacho
+	disabled 1
+}
+
+attackComboSlot SL_SMA {
+    afterSkill SL_STUN
+    waitBeforeUse 0.6
+    lvl 10
+    dist 9
+    sp > 10
+	disabled 0
+}

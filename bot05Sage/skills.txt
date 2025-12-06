@@ -1,0 +1,61 @@
+partySkill SA_FLAMELAUNCHER {
+	target_whenStatusInactive EFST_PROPERTYFIRE
+	inventory 990 > 0
+	target_timeout 180
+	sp > 40
+	notInTown 1
+	disabled 1
+}
+
+###MG_COLDBOLT, MG_FIREBOLT, MG_LIGHTNINGBOLT
+attackSkillSlot MG_COLDBOLT {
+	lvl 3
+    dist 9,8,7,6,5
+    sp > 20
+	notWhileSitting 1
+	notInTown 1
+	monsters Magmaring, Zerom
+	disabled 0
+}
+
+attackSkillSlot MG_LIGHTNINGBOLT {
+	lvl 3
+    dist 9,8,7,6,5
+    sp > 20
+	notWhileSitting 1
+	notInTown 1
+	monsters Thara Frog, Hydra
+	disabled 0
+}
+
+attackSkillSlot MG_FIREBOLT {
+	lvl 3
+    dist 9,8,7,6,5
+    sp > 20
+	notWhileSitting 1
+	notInTown 1
+	#monsters Sandman, Stapo, Sleeper, Megalodon, 1255
+	disabled 0
+}
+
+attackSkillSlot MG_SOULSTRIKE {
+    dist 9,8,7,6,5
+    sp > 20
+	notWhileSitting 1
+	notInTown 1
+	disabled 1
+}
+
+useSelf_skill AL_HEAL {
+	sp > 40
+	hp < 90%
+    timeout 0.1
+}
+
+partySkill AL_HEAL {
+	target_whenStatusInactive Berserk
+	sp > 40
+	target_hp < 90%
+	notInTown 0
+	timeout 0.1
+}
