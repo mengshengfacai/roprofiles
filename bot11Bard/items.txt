@@ -1,0 +1,82 @@
+getAuto Steel Arrow {
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	disabled 0
+}
+
+getAuto Crystal Arrow {
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	disabled 1
+}
+
+getAuto Concentration Potion {
+	minAmount 1
+	maxAmount 5
+}
+
+getAuto Candy {
+	minAmount 2
+	maxAmount 25
+	minBase 10
+}
+
+buyAuto Steel Arrow {
+	npc prontera 151 180
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	zeny > 50000
+	disabled 0
+}
+
+buyAuto Crystal Arrow {
+	npc prontera 151 180
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	zeny > 50000
+	disabled 1
+}
+
+buyAuto Concentration Potion {
+	npc prontera 161 180
+	minAmount 1
+	maxAmount 5
+	zeny > 50000
+}
+
+useSelf_item Concentration Potion {
+	whenStatusInactive EFST_ATTHASTE_POTION1
+	inLockOnly 0
+	notInTown 1
+	notWhileSitting 1
+	}
+	
+
+buyAuto Fly Wing {
+	label buyAutoFlyWing
+	npc prontera 161 180
+	minAmount 2
+	maxAmount 50
+	minBase 10
+	zeny > 50000
+}
+
+autoSwitch High Orc, 1135, 1282, Jakk {
+    arrow Crystal Arrow
+}
+
+autoSwitch Orc Warrior, Orc Archer, Orc Lady, 1155 {
+    arrow Fire Arrow
+}
+
+autoSwitch 1156, 1692, 1133, 1296 {
+    arrow Stone Arrow
+}
+
+autoSwitch Zombie, Ghoul, Nightmare, Drainliar, 1204 {
+    arrow Silver Arrow
+}

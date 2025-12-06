@@ -1,0 +1,1 @@
+#autoSwitch_default_rightHand +5 Saber [Fire] [2]

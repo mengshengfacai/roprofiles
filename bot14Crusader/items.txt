@@ -1,0 +1,39 @@
+getAuto Awakening Potion {
+	minAmount 1
+	maxAmount 5
+	minBase 40
+	maxBase 85
+}
+
+getAuto Candy {
+	minAmount 1
+	maxAmount 25
+}
+
+buyAuto Fly Wing {
+	label buyAutoFlyWing
+	npc prontera 161 180
+	minAmount 2
+	maxAmount 10
+	minBase 10
+	zeny > 50000
+}
+
+buyAuto Awakening Potion {
+	npc prontera 161 180
+	minAmount 1
+	maxAmount 5
+	zeny > 50000
+	minBase 40
+	maxBase 85
+}
+
+useSelf_item Awakening Potion {
+	whenStatusInactive EFST_ATTHASTE_POTION2
+	inLockOnly 0
+	notInTown 1
+	notWhileSitting 1
+	timeout 5
+	minBase 40
+	disabled 1
+}

@@ -1,0 +1,47 @@
+useSelf_skill AC_CONCENTRATION {
+	whenStatusInactive EFST_CONCENTRATION
+	notWhileSitting 1
+	notInTown 1
+	timeout 5
+}
+
+attackSkillSlot AC_DOUBLE {
+	sp > 20%
+	#equip_rightHand +5 Orc Archer Bow
+}
+
+attackSkillSlot AC_DOUBLE {
+    timeout 1
+	monsters High Orc, Anubis, Pasana
+	disabled 1
+}
+
+attackSkillSlot AC_DOUBLE {
+	inMap gl_knt01, gl_knt02, glast_01, gl_cas02, gl_cas01
+	disabled 1
+}
+
+useSelf_skill BA_ASSASSINCROSS{
+	whenStatusInactive EFST_BDPLAYING
+    notInTown 1
+    notWhileSitting 1
+	smartEncore 1
+	timeout 5
+	disabled 1
+}
+
+equipAuto {
+    rightHand Burning Passion Guitar
+    whenStatusInactive EFST_BDPLAYING
+    timeout 5
+	disabled 1
+}
+
+equipAuto {
+    rightHand +5 Orc Archer Bow
+    whenStatusActive EFST_BDPLAYING
+    timeout 5
+	disabled 1
+}
+
+#autoSwitch_default_rightHand +5 Orc Archer Bow
