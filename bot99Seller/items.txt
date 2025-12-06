@@ -1,0 +1,18 @@
+getAuto Piece of Cake {
+	minAmount 1
+	maxAmount 700
+	disabled 0
+}
+
+#Zargon
+#Witherless Rose
+#Crystal Mirror
+#7099
+#
+#
+
+getAuto Zargon {
+	minAmount 1
+	maxAmount 5000
+	disabled 1
+}

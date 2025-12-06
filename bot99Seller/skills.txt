@@ -1,0 +1,8 @@
+useSelf_skill BS_ADRENALINE {
+	whenStatusInactive EFST_ADRENALINE
+	notWhileSitting 1
+	notInTown 1
+	timeout 5
+}
+
+

@@ -1,0 +1,6 @@
+#autoSwitch_default_rightHand +5 Saber [Fire] [2]
+
+attackSkillSlot AS_SONICBLOW {
+    sp > 20%
+	disabled 0
+}

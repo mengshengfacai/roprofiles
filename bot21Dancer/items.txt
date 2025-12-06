@@ -1,0 +1,102 @@
+getAuto Steel Arrow {
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	disabled 0
+}
+
+getAuto Crystal Arrow {
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	disabled 1
+}
+
+getAuto Concentration Potion {
+	minAmount 1
+	maxAmount 5
+}
+
+getAuto Candy {
+	minAmount 2
+	maxAmount 25
+	minBase 10
+}
+
+getAuto 12114 {
+	minAmount 1
+	maxAmount 2
+	disabled 0
+}
+
+getAuto 12116 {
+	minAmount 1
+	maxAmount 2
+	disabled 1
+}
+
+buyAuto Steel Arrow {
+	npc prontera 151 180
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	zeny > 50000
+	disabled 0
+}
+
+buyAuto Crystal Arrow {
+	npc prontera 151 180
+	minAmount 100
+	maxAmount 1000
+	minBase 10
+	zeny > 50000
+	disabled 1
+}
+
+useSelf_item Concentration Potion {
+	whenStatusInactive EFST_ATTHASTE_POTION1
+	inLockOnly 0
+	notInTown 1
+	notWhileSitting 1
+	}
+
+buyAuto Fly Wing {
+	label buyAutoFlyWing
+	npc prontera 161 180
+	minAmount 2
+	maxAmount 50
+	minBase 10
+	zeny > 50000
+}
+
+useSelf_item 12114 {
+	whenStatusInactive EFST_PROPERTYFIRE
+	inLockOnly 0
+	notInTown 1
+	location gl_sew03
+	notWhileSitting 1
+	timeout 1800
+	disabled 0
+}
+
+useSelf_item 12116 {
+	whenStatusInactive EFST_PROPERTYGROUND
+	inLockOnly 0
+	notInTown 1
+	location pay_fild11
+	notWhileSitting 1
+	timeout 1800
+	disabled 1
+}
+
+autoSwitch High Orc {
+    arrow Crystal Arrow
+}
+
+autoSwitch Orc Warrior, Orc Archer, Orc Lady, 1155 {
+    arrow Fire Arrow
+}
+
+autoSwitch 1156, 1692 {
+    arrow Stone Arrow
+}
